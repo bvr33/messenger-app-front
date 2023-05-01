@@ -1,0 +1,33 @@
+$diff-color-darker: 15%;
+$diff-color-lighter: 10%;
+/*
+    Base Colors
+*/
+$color-primary: #4837a5;
+$color-secondary: #3d6fad;
+$color-third: #4cbd92;
+$color-white: #f5f5f5;
+$color-black: #131313;
+$color-gray: #7a7a7a;
+$color-green: #429642;
+$color-red: #a84747;
+
+$color-primary-lighter: lighten($color-primary, $diff-color-lighter);
+$color-primary-darker: darken($color-primary, $diff-color-darker);
+
+$color-secondary-lighter: lighten($color-secondary, $diff-color-lighter);
+$color-secondary-darker: darken($color-secondary, $diff-color-darker);
+
+$color-third-lighter: lighten($color-third, $diff-color-lighter);
+$color-third-darker: darken($color-third, $diff-color-darker);
+
+$color-green-lighter: lighten($color-green, $diff-color-lighter);
+$color-green-darker: darken($color-green, $diff-color-darker);
+
+$color-red-lighter: lighten($color-red, $diff-color-lighter);
+$color-red-darker: darken($color-red, $diff-color-darker);
+
+/*
+    oth
+*/
+$border-radius: 10px;
