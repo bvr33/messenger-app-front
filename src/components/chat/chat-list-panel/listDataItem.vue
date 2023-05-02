@@ -32,6 +32,7 @@ const isActive = computed(() => chatsStore.openChatId == props.chatId)
 
 <style lang="scss" scoped>
 .chat-item {
+  cursor: pointer;
   padding: 10px;
   width: 100%;
   height: 100px;
