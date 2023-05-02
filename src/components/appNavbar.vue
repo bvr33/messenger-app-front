@@ -6,6 +6,7 @@ import { RouterLink } from 'vue-router'
   <nav>
     <RouterLink to="/">Home</RouterLink>
     <RouterLink to="/chat">Chat</RouterLink>
+    <RouterLink to="/test">Test</RouterLink>
   </nav>
 </template>
 
@@ -15,10 +16,9 @@ nav {
   text-align: center;
   display: flex;
   flex-direction: row;
-  gap: 10px;
   height: 100%;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 
 a {

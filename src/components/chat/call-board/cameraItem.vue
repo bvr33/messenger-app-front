@@ -9,7 +9,7 @@ defineProps<{
 <template>
   <span class="camera-item">
     <Icon v-if="!src" icon="iconoir:user-circle" />
-    <video v-else :srcObject="src" autoplay />
+    <video v-else :srcObject="src" autoplay playsinline />
   </span>
 </template>
 <style lang="scss" scoped>
