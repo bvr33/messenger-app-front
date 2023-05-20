@@ -6,18 +6,18 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base:'/messenger-app-front/',
+  base: '/messenger-app-front/',
   plugins: [vue(), vueJsx()],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
-   css: {
+  css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@import "@/assets/variables.scss";`,
-      },
-    },
-  },
+        additionalData: `@import "@/core/assets/variables.scss";`
+      }
+    }
+  }
 })
