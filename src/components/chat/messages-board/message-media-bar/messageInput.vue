@@ -8,7 +8,7 @@ import IconButton from '@/components/other/buttons/iconButton.vue'
   <span class="message">
     <input type="text" placeholder="Aa" />
     <icon-button tooltip="emoji">
-      <Icon icon="iconoir:emoji" />
+      <Icon icon="solar:emoji-funny-square-outline" />
     </icon-button>
   </span>
 </template>

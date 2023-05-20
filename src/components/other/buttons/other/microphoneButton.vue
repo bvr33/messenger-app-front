@@ -9,8 +9,8 @@ defineProps<{
 
 <template>
   <icon-button :tooltip="'microphone'">
-    <Icon v-if="!isActive" icon="iconoir:mic" />
-    <Icon v-else icon="iconoir:mic-mute" />
+    <Icon v-if="!isActive" icon="solar:microphone-outline" />
+    <Icon v-else icon="solar:microphone-line-duotone" />
   </icon-button>
 </template>
 <style lang="scss" scoped></style>

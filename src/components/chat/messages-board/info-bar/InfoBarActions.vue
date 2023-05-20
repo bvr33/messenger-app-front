@@ -11,14 +11,14 @@ const {
 
 <template>
   <icon-button tooltip="audio call" tt-position="bottom" @click="start">
-    <Icon icon="iconoir:phone" />
+    <Icon icon="solar:end-call-outline" />
   </icon-button>
 
   <icon-button tooltip="video call" tt-position="bottom" @click="start">
-    <Icon icon="iconoir:video-camera" />
+    <Icon icon="solar:videocamera-outline" />
   </icon-button>
 
   <icon-button tooltip="chat settings" tt-position="bottom">
-    <Icon icon="iconoir:settings" />
+    <Icon icon="solar:settings-outline" />
   </icon-button>
 </template>

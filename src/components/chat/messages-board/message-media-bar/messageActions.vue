@@ -6,10 +6,10 @@ import IconButton from '@/components/other/buttons/iconButton.vue'
 
 <template>
   <icon-button tooltip="more">
-    <Icon icon="iconoir:add-circle" />
+    <Icon icon="solar:add-circle-outline" />
   </icon-button>
 
   <icon-button tooltip="send file">
-    <Icon icon="iconoir:empty-page" />
+    <Icon icon="solar:file-outline" />
   </icon-button>
 </template>

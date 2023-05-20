@@ -4,7 +4,19 @@ import CameraButton from '@/components/other/buttons/other/cameraButton.vue'
 import MicrophoneButton from '@/components/other/buttons/other/microphoneButton.vue'
 import { Icon } from '@iconify/vue'
 import { useChatStore } from '@/stores/chat.store'
+import { reactive } from 'vue'
 
+const mediaActive = reactive({
+  camera: false,
+  mic: false
+})
+
+const toggleCamera = (): void => {
+  mediaActive.camera = !mediaActive.camera
+}
+const toggleMic = (): void => {
+  mediaActive.mic = !mediaActive.mic
+}
 const {
   call: { stop }
 } = useChatStore()
@@ -12,13 +24,13 @@ const {
 
 <template>
   <icon-button class="button btn-end_call" tooltip="End Call" @click="stop">
-    <Icon icon="ic:baseline-call-end" />
+    <Icon icon="solar:call-cancel-outline" />
   </icon-button>
   <icon-button class="button" tooltip="Share Screen">
-    <Icon icon="ic:baseline-screen-share" />
+    <Icon icon="solar:screen-share-outline" />
   </icon-button>
-  <microphone-button class="button" :is-active="false" />
-  <camera-button class="button" :is-active="false" />
+  <microphone-button @click="toggleMic" class="button" :is-active="mediaActive.mic" />
+  <camera-button @click="toggleCamera" class="button" :is-active="mediaActive.camera" />
 </template>
 
 <style lang="scss" scoped>

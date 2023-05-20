@@ -15,7 +15,7 @@ import MessageInput from '@/components/chat/messages-board/message-media-bar/mes
     <message-input />
 
     <icon-button tooltip="send">
-      <Icon icon="iconoir:send" />
+      <Icon icon="solar:map-arrow-right-outline" />
     </icon-button>
   </div>
 </template>

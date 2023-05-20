@@ -8,7 +8,9 @@ defineProps<{
 
 <template>
   <span class="camera-item">
-    <Icon v-if="!src" icon="iconoir:user-circle" />
+    <!-- TODO -> change icon to user-icon Component
+    -->
+    <Icon v-if="!src" icon="solar:user-outline" />
     <video v-else :srcObject="src" autoplay playsinline />
   </span>
 </template>
