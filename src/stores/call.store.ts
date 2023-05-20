@@ -1,12 +1,7 @@
-import {
-  MediaType,
-  getUserMediaStream,
-  someTrackIsLive,
-  stopUserMediaStream
-} from '@/utils/userMedia.util'
+import { MediaType } from '@/types/mediaType'
+import { getUserMediaStream, someTrackIsLive, stopUserMediaStream } from '@/utils/userMedia.util'
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
-
 const constraints: MediaStreamConstraints = {
   video: {
     width: 300,
@@ -20,7 +15,6 @@ export const useCallStore = defineStore('chats', () => {
     console.clear()
 
     console.log(localMedia.value?.active)
-
   }
   //
   const isCallActive = ref<boolean>(false)

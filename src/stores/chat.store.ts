@@ -1,8 +1,8 @@
 import { defineStore } from 'pinia'
 import { computed, ref } from 'vue'
 
-import { data, type ChatListData, generateRandomChat } from '@/mock'
-
+import { data, generateRandomChat } from '@/mock'
+import type { ChatListData } from '@/types/chatListData'
 export const useChatStore = defineStore('chats', () => {
   //message chats
   const chats = ref<ChatListData[]>(data())
