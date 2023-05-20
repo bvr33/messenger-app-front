@@ -37,7 +37,7 @@ const isActive = computed(() => chatsStore.openChatId == props.chatId)
   width: 100%;
   height: 100px;
   display: flex;
-  flex-grow: 0;
+  flex: 0 0 1;
   flex-direction: row;
   place-items: center;
   gap: 10px;
@@ -50,21 +50,28 @@ const isActive = computed(() => chatsStore.openChatId == props.chatId)
 
   .data {
     overflow: hidden;
-    flex-grow: 1;
+    flex: 1 0 1;
     display: flex;
     gap: 5px;
     flex-direction: column;
 
+    .user-name,
+    .text {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
     .user-name {
+      flex: 1 0 1;
       color: $color-white;
       font-size: 1rem;
     }
 
     .text {
-      flex-grow: 1;
+      flex: 1 0 1;
       color: $color-gray;
       font-size: 0.8rem;
-      height: max-content;
+      width: 100%;
     }
   }
 
